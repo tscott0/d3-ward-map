@@ -1,6 +1,9 @@
 # d3-ward-map
 Choropleth map of London wards using d3.js
 
+- `go run main.go`
+- Go to http://localhost:8100/
+
 # TODO
 - Generate input csv/json based on real data
 - Tweak scale/transform to centre the map
