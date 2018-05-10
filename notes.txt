@@ -1,0 +1,42 @@
+Envelope: -0.77,51.332,0.605,51.631
+
+
+
+Links:
+https://developers.arcgis.com/rest/services-reference/query-feature-service-layer-.htm
+http://geoportal.statistics.gov.uk/datasets/wards-december-2016-super-generalised-clipped-boundaries-in-great-britain/geoservice?geometry=-0.77%2C51.332%2C0.605%2C51.631
+http://geoportal.statistics.gov.uk/datasets/ons-postcode-directory-latest-centroids/geoservice?geometry=-0.77%2C51.332%2C0.605%2C51.631
+http://bl.ocks.org/palewire/d2906de347a160f38bc0b7ca57721328
+https://bl.ocks.org/d3indepth/c62b6ce6625b69f6007cea5fccdd4599
+
+
+https://ons-inspire.esriuk.com/arcgis/rest/services/Postcodes/ONS_Postcode_Directory_Latest_Centroids/MapServer/0/query?where=1%3D1&outFields=pcd,pcd2,pcds,lat,long,osward&geometry=-0.77%2C51.332%2C0.605%2C51.631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&f=geojson
+
+cat postcodes.json | jq '.features | length'
+
+
+#1
+wget -O postcodes1.json "https://ons-inspire.esriuk.com/arcgis/rest/services/Postcodes/ONS_Postcode_Directory_Latest_Centroids/MapServer/0/query?where=1%3D1&outFields=pcd,pcd2,pcds,lat,long,osward&geometry=-0.77%2C51.332%2C0.605%2C51.631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&resultOffset=34000&f=geojson" && cat postcodes1.json | jq '.features | length'
+
+#2
+wget -O postcodes2.json "https://ons-inspire.esriuk.com/arcgis/rest/services/Postcodes/ONS_Postcode_Directory_Latest_Centroids/MapServer/0/query?where=1%3D1&outFields=pcd,pcd2,pcds,lat,long,osward&geometry=-0.77%2C51.332%2C0.605%2C51.631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&resultOffset=34000&f=geojson" && cat postcodes2.json | jq '.features | length'
+
+#3
+wget -O postcodes3.json "https://ons-inspire.esriuk.com/arcgis/rest/services/Postcodes/ONS_Postcode_Directory_Latest_Centroids/MapServer/0/query?where=1%3D1&outFields=pcd,pcd2,pcds,lat,long,osward&geometry=-0.77%2C51.332%2C0.605%2C51.631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&resultOffset=68000&f=geojson" && cat postcodes3.json | jq '.features | length'
+
+#4
+wget -O postcodes4.json "https://ons-inspire.esriuk.com/arcgis/rest/services/Postcodes/ONS_Postcode_Directory_Latest_Centroids/MapServer/0/query?where=1%3D1&outFields=pcd,pcd2,pcds,lat,long,osward&geometry=-0.77%2C51.332%2C0.605%2C51.631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&resultOffset=102000&f=geojson" && cat postcodes4.json | jq '.features | length'
+
+#5
+wget -O postcodes5.json "https://ons-inspire.esriuk.com/arcgis/rest/services/Postcodes/ONS_Postcode_Directory_Latest_Centroids/MapServer/0/query?where=1%3D1&outFields=pcd,pcd2,pcds,lat,long,osward&geometry=-0.77%2C51.332%2C0.605%2C51.631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&resultOffset=136000&f=geojson" && cat postcodes5.json | jq '.features | length'
+
+#6
+wget -O postcodes6.json "https://ons-inspire.esriuk.com/arcgis/rest/services/Postcodes/ONS_Postcode_Directory_Latest_Centroids/MapServer/0/query?where=1%3D1&outFields=pcd,pcd2,pcds,lat,long,osward&geometry=-0.77%2C51.332%2C0.605%2C51.631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&resultOffset=170000&f=geojson" && cat postcodes6.json | jq '.features | length'
+
+#7
+wget -O postcodes7.json "https://ons-inspire.esriuk.com/arcgis/rest/services/Postcodes/ONS_Postcode_Directory_Latest_Centroids/MapServer/0/query?where=1%3D1&outFields=pcd,pcd2,pcds,lat,long,osward&geometry=-0.77%2C51.332%2C0.605%2C51.631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&resultOffset=204000&f=geojson" && cat postcodes7.json | jq '.features | length'
+
+#8
+wget -O postcodes8.json "https://ons-inspire.esriuk.com/arcgis/rest/services/Postcodes/ONS_Postcode_Directory_Latest_Centroids/MapServer/0/query?where=1%3D1&outFields=pcd,pcd2,pcds,lat,long,osward&geometry=-0.77%2C51.332%2C0.605%2C51.631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&resultOffset=204000&f=geojson" && cat postcodes8.json | jq '.features | length'
+
+
